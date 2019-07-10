@@ -1,0 +1,69 @@
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-size: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+   background: #ddd;
+}
+
+.container {
+   max-width: 120rem;
+   border-radius: 3px;
+   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+   background: #fff;
+   margin: 2rem auto;
+   padding: 2.5rem;
+}
+
+.container h1 {
+   text-align: center;
+   font-weight: lighter;
+}
+
+.data {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.post {
+   max-width: 80%;
+   margin: 0 auto;
+   padding: 1.5rem;
+}
+
+.post p {
+   line-height: 1.4;
+}
+
+.pagination__list {
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   flex-wrap: wrap;
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+.pagination__item {
+   margin: 1.5rem;
+}
+
+.pagination__link {
+   display: block;
+   padding: 1rem 1.5rem;
+   background: rgb(12, 159, 204);
+   color: #fff;
+   border-radius: 3px;
+   text-decoration: none;
+}

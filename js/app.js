@@ -11,7 +11,7 @@ makePost = data => `
 const pagination = new Pagination(
    document.getElementById('data'),
    document.querySelector('.pagination'),
-   5,
+   10,
    1,
    makePost
 );
