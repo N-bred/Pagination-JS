@@ -10,22 +10,28 @@ How to use:
 
 - Download the script from js/
   - There are different scripts base on your needs.
-  - If you only want to use it, make sure to download the miniefied one "Pagination.min.js"
+  - If you only want to use it, make sure to download the minified one "Pagination.min.js"
   - If you need ES5 support, download the minified one "PaginationES5.min.js"
-  - If you want to read the source code, i recommend you to donwload the typescript one.
+  - If you want to read the source code, i recommend you to donwload the Typescript one.
+
+
 - Add the script tag on your HTML page as 
   - ```<script src="Pagination.min.js"></script> ```
+
+
 - Make sure to have the following conditions on your code
   - You need to have 2 elements in your HTML page.
     - The first should be a container for all the elements that you are going to generate with the data passed.
     - The second one should be the pagination container.
   - A function to use as the template generator for the data retrieved. (*Don't worry, this documentation shows you how to implement one*)
+
+
 - Initialize the class by calling its constructor and passing the argumens.
   - The first argument is the element on which the data should be rendered
-  - The second argument is the elemet that will contain the pagination
+  - The second argument is the element that will contain the pagination
   - The third argument is a number representing the limit of iterations per page.
-  - The fourth argument is a number that represents the index of page you're showing
-  - The fitfh element is the function that acts as a template generator.
+  - The fourth argument is a number that represents the index of page you're showing (***This should be set to 1***)
+  - The fifth element is the function that acts as a template generator.
   - The sixth element is optional, its and object that contains custom classes for the pagination HTML elements. (ul, li, a).
 
 It goes like this
@@ -112,12 +118,12 @@ And the data should look like this.
 
 Thats it!, now you should add some CSS to it.
 
-By default, the classes for the elements are: 
+By default, the CSS classes for the elements are: 
 
 - ul = pagination__list
 - li = pagination__item
 - a = pagination__link
 
-You can change them by passing an object with the new classes as the las argument.
+You can change them by passing an object with the new classes as the last argument.
 
 See the DEMO: https://n-bred.github.io/Pagination-JS/
